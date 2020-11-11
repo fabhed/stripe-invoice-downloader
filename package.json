@@ -1,0 +1,17 @@
+{
+  "name": "stripe-invoice-downloader",
+  "version": "0.0.1",
+  "description": "A CLI to download Stripe invoices as PDFs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Fabian Hedin",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "luxon": "^1.25.0",
+    "stripe": "^8.121.0"
+  }
+}
