@@ -1,5 +1,5 @@
 # Stripe Invoice Downloader
-Download PDF invoices from Stripe using this Node.js script.
+A Node.js CLI to download PDF invoices from Stripe.
 
 ## Install
 ```sh
@@ -15,7 +15,7 @@ Edit `.env` and enter your Stripe secret key.
 # year is required, month and date are optional
 npm start [year] [month] [date]
 ```
-The downloaded PDFs will be put into `downloads` folder.
+The downloaded PDFs will be put into a `downloads` folder in the repo.
 ## Examples
 ```sh
 # Will get all invoices created between 2020-01-01 - 2020-12-31
@@ -28,7 +28,7 @@ npm start 2020 1
 ```
 
 ```sh
-#Will get all invoices created on 2020-01-01
+# Will get all invoices created on 2020-01-01
 npm start 2020 1 1
 ```
 ## Background
