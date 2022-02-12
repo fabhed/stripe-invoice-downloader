@@ -1,22 +1,29 @@
 # Stripe Invoice Downloader
+
 A Node.js CLI to download PDF invoices from Stripe.
 
 ## Install
+
 ```sh
 git clone https://github.com/minifjurt123/stripe-invoice-downloader
 cd stripe-invoice-downloader
 cp .env.example .env
 npm i
 ```
-Edit `.env` and enter your Stripe secret key. 
+
+Edit `.env` and enter your Stripe secret key.
 
 ## Usage
+
 ```sh
 # year is required, month and date are optional
 npm start [year] [month] [date]
 ```
+
 The downloaded PDFs will be put into a `downloads` folder in the repo.
+
 ## Examples
+
 ```sh
 # Will get all invoices created between 2020-01-01 - 2020-12-31
 npm start 2020
@@ -31,5 +38,12 @@ npm start 2020 1
 # Will get all invoices created on 2020-01-01
 npm start 2020 1 1
 ```
+
+```sh
+# Download & Combine into one pdf (using python script that ships with mac systems)
+npm start 2020 1 && "/System/Library/Automator/Combine PDF Pages.action/Contents/Resources/join.py" -o ./downloads/merged.pdf downloads/*.pdf
+```
+
 ## Background
+
 This tool was created to easily get PDF versions of VAT Invoices required when bookkeeping in Sweden.
