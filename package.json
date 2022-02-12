@@ -12,6 +12,7 @@
   "dependencies": {
     "dotenv": "^8.2.0",
     "luxon": "^1.25.0",
-    "stripe": "^8.121.0"
+    "node-fetch": "^2.6.7",
+    "stripe": "^8.202.0"
   }
 }
